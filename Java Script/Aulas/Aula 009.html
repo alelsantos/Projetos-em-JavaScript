@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos no DOM</title>
+    <style>
+
+
+body {
+
+    background: blue;
+    color: white;
+    font: normal 18pt Arial;
+
+}
+
+    </style>
+</head>
+<body>
+    
+   
+<h1> Iniciando os estudos </h1>
+<p> Aqui vai o resultado </p>
+<p> Apredendo a usar o <strong>DOM</strong> em JavaScript.</p>
+<div id="msg">Clique em mim</div>
+<script>
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagname('p')[0]
+    var id = window.document.getElementById('msg')
+    id.style.background = 'red'
+    id.innerText = ' Estou fazendo o meu melhor..'
+    var d = window.document.querySelector('div.msg')
+    d.style.background = 'black'
+    window.document.getElementById('msg').innerText = "Olá"
+    var d = window.document.querySelector('div.msg')
+    d.style.background = 'black'
+
+
+   
+
+         //var p1 = window.document.getElementsByTagName('p') [0]  // Seleciona qual parafrago voce quer//
+   // window.document.write(p1.innerText)  // Seleciona o que esta dentro do paragrafo //
+    //p1.style.color = 'black'  //
+
+
+     //window.alert(p1.innerHTML)   ( assim voce pode isar os botoes)//
+    //window.document.write(window.document.URL) //
+
+
+</script>
+
+
+
+</body>
+</html>
+
+
